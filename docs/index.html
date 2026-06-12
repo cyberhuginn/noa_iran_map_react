@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A highly customizable, interactive map of Iran for React and Next.js applications. Perfect for data visualization and dashboards.">
-    <meta name="author" content="CyberHuginn, YousefZare">
-    <meta name="google-site-verification" content="nro38TdpJg8p5v2eyjs0AFTNJm1BDRQPJIDJ-5Ri97E" />
+
     <title>Noa Iran Map React - Interactive Iran Map for React & Next.js</title>
+
+    <meta name="description"
+          content="A highly customizable interactive map of Iran for React and Next.js applications with TypeScript support. Perfect for dashboards, analytics, and data visualization.">
+
+    <meta name="author" content="CyberHuginn, YousefZare">
+
+    <meta name="google-site-verification" content="nro38TdpJg8p5v2eyjs0AFTNJm1BDRQPJIDJ-5Ri97E" />
+
+    <link rel="canonical"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/">
+
+    <link rel="alternate"
+          hreflang="en"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/">
+
+    <link rel="alternate"
+          hreflang="fa"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/fa/">
+
+    <link rel="alternate"
+          hreflang="x-default"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/">
+
     <style>
         * {
             margin: 0;
@@ -15,18 +36,30 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f9f9f9;
             color: #333;
             padding: 20px;
         }
 
+        .language-switch {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .language-switch a {
+            color: #ff5733;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         header {
             text-align: center;
-            padding: 20px 0;
+            padding: 25px;
             background-color: #ff5733;
             color: white;
+            border-radius: 8px;
         }
 
         header h1 {
@@ -36,22 +69,33 @@
 
         header p {
             font-size: 1rem;
-            margin-bottom: 0;
         }
 
         .container {
             max-width: 900px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 25px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            margin: 20px 0;
+            margin: 25px 0 15px;
             font-size: 1.8rem;
             color: #ff5733;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         pre {
@@ -65,15 +109,17 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin: 15px 0 25px;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid #ddd;
         }
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             text-align: left;
         }
@@ -90,7 +136,7 @@
             color: white;
             text-decoration: none;
             border-radius: 4px;
-            transition: background 0.3s;
+            transition: background .3s;
         }
 
         .download:hover {
@@ -103,13 +149,14 @@
             color: #777;
         }
 
+        footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
-            }
-
-            header p {
-                font-size: 0.9rem;
             }
 
             h2 {
@@ -117,119 +164,202 @@
             }
 
             pre {
-                font-size: 0.9rem;
+                font-size: .9rem;
             }
         }
     </style>
 </head>
 <body>
+
+<div class="language-switch">
+    <a href="./fa/index.html">فارسی</a>
+</div>
+
 <header>
     <h1>Noa Iran Map React</h1>
     <p>The ultimate interactive map of Iran for React and Next.js applications</p>
 </header>
+
 <div class="container">
+
     <h2>About</h2>
+
     <p>
-        <strong>Noa Iran Map React</strong> is a highly customizable and interactive map of Iran, designed to seamlessly integrate
-        with React and Next.js applications. With robust TypeScript support and dynamic province highlighting, it’s perfect
-        for creating interactive dashboards or visually rich data applications.
+        Noa Iran Map React is a highly customizable and interactive map of Iran designed
+        specifically for React and Next.js applications.
+    </p>
+
+    <p>
+        With full TypeScript support, dynamic province highlighting, and a lightweight
+        architecture, it is ideal for dashboards, analytics platforms, and data-driven applications.
+    </p>
+
+    <p>
+        Whether you need to visualize sales data, user distribution, regional statistics,
+        or any province-based information, this package provides a simple and powerful solution.
     </p>
 
     <h2>Features</h2>
+
     <ul>
-        <li><strong>Dynamic Province Coloring:</strong> Highlight provinces using their codes and corresponding data values.</li>
-        <li><strong>TypeScript Ready:</strong> Fully compatible with TypeScript for enhanced type safety and code clarity.</li>
-        <li><strong>Next.js Friendly:</strong> Optimized for server-side rendering and fast performance in React environments.</li>
-        <li><strong>Interactive:</strong> Enable dynamic updates and interactive events with intuitive props.</li>
+        <li>
+            <strong>Dynamic Province Coloring:</strong>
+            Highlight provinces using province codes and custom values.
+        </li>
+
+        <li>
+            <strong>TypeScript Ready:</strong>
+            Full TypeScript support with strong typing and better developer experience.
+        </li>
+
+        <li>
+            <strong>Next.js Friendly:</strong>
+            Optimized for modern React and Next.js applications.
+        </li>
+
+        <li>
+            <strong>Interactive:</strong>
+            Supports tooltips and dynamic data updates.
+        </li>
+
+        <li>
+            <strong>Lightweight:</strong>
+            No unnecessary dependencies.
+        </li>
+
+        <li>
+            <strong>Highly Customizable:</strong>
+            Easily customize colors and behavior using props.
+        </li>
     </ul>
 
     <h2>Installation</h2>
+
     <pre><code>npm install noa-iran-map-react</code></pre>
 
     <h2>Usage Example</h2>
-    <pre><code>
-import React from 'react';
+
+    <pre><code>import React from 'react';
 import IranMap from 'noa-iran-map-react';
 
 export default function Home() {
     const data = {
-        "IR-32": 100, // استان البرز
-        "IR-15": 200, // استان کرمان
-        "IR-04": 250, // استان کرمان
+        "IR-32": 100, // Alborz
+        "IR-15": 200, // Kerman
+        "IR-04": 250, // Fars
     };
 
     return (
         &lt;IranMap data={data} /&gt;
     );
-}
-        </code></pre>
+}</code></pre>
 
     <h2>Props</h2>
+
     <table>
         <thead>
         <tr>
-            <th>Prop Name</th>
+            <th>Prop</th>
             <th>Type</th>
             <th>Default</th>
             <th>Description</th>
         </tr>
         </thead>
+
         <tbody>
         <tr>
-            <td><code>color</code></td>
+            <td>color</td>
             <td>string</td>
             <td>#FF5733</td>
-            <td>The fill color for provinces that have data.</td>
+            <td>Fill color for provinces that contain data.</td>
         </tr>
+
         <tr>
-            <td><code>backgroundColor</code></td>
+            <td>backgroundColor</td>
             <td>string</td>
             <td>#E0E0E0</td>
-            <td>The default color for provinces without specific data.</td>
+            <td>Default color for provinces without data.</td>
         </tr>
+
         <tr>
-            <td><code>tooltipLabel</code></td>
+            <td>tooltipLabel</td>
             <td>(code: string) => string</td>
             <td>undefined</td>
-            <td>Function to define the tooltip label when hovering provinces.</td>
+            <td>Function used to generate tooltip labels.</td>
         </tr>
+
         <tr>
-            <td><code>data</code></td>
+            <td>data</td>
             <td>Record&lt;string, number&gt;</td>
             <td>{}</td>
-            <td>An object containing province codes as keys and values as data.</td>
+            <td>Province codes mapped to numeric values.</td>
         </tr>
         </tbody>
     </table>
 
     <h2>Province Codes</h2>
-    <p>Below are some example province codes for use with the <strong>data</strong> prop:</p>
+
+    <p>
+        Use official province codes when providing data to the map.
+    </p>
+
     <table>
         <thead>
         <tr>
-            <th>Province Name</th>
+            <th>Province</th>
             <th>Code</th>
         </tr>
         </thead>
+
         <tbody>
         <tr>
             <td>Alborz</td>
             <td>IR-32</td>
         </tr>
+
         <tr>
             <td>Kerman</td>
             <td>IR-15</td>
         </tr>
+
         <tr>
             <td>Fars</td>
             <td>IR-04</td>
         </tr>
         </tbody>
     </table>
-    <a href="https://cyberhuginn.github.io/noa_iran_map_react/assets/iran_provinces.json" class="download">Download Full Province Codes JSON</a>
+
+    <p>
+        Download the complete list of province codes below.
+    </p>
+
+    <a href="https://cyberhuginn.github.io/noa_iran_map_react/assets/iran_provinces.json"
+       class="download">
+        Download Full Province Codes JSON
+    </a>
+
+    <h2>Use Cases</h2>
+
+    <ul>
+        <li>Business Dashboards</li>
+        <li>Sales Analytics</li>
+        <li>Regional Statistics</li>
+        <li>User Distribution Visualization</li>
+        <li>Reporting Platforms</li>
+        <li>Geographical Data Analysis</li>
+    </ul>
+
 </div>
+
 <footer>
-    <p>&copy; 2025 <a href="https://github.com/cyberhuginn" target="_blank">CyberHuginn</a> &amp; <a href="https://github.com/YousefZare2000" target="_blank">YousefZare</a>. All rights reserved.</p>
+    <p>
+        © 2025
+        <a href="https://github.com/cyberhuginn" target="_blank">CyberHuginn</a>
+        &
+        <a href="https://github.com/YousefZare2000" target="_blank">YousefZare</a>.
+        All rights reserved.
+    </p>
 </footer>
+
 </body>
 </html>
