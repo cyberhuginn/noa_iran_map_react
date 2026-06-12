@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>نقشه ایران React | Noa Iran Map React</title>
+
+    <meta name="description"
+          content="نقشه تعاملی ایران برای React و Next.js با قابلیت شخصی‌سازی کامل، نمایش داده‌های استانی و پشتیبانی از TypeScript">
+
+    <meta name="author" content="CyberHuginn, YousefZare">
+
+    <meta name="google-site-verification"
+          content="nro38TdpJg8p5v2eyjs0AFTNJm1BDRQPJIDJ-5Ri97E" />
+
+    <link rel="canonical"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/fa/">
+
+    <link rel="alternate"
+          hreflang="fa"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/fa/">
+
+    <link rel="alternate"
+          hreflang="en"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/">
+
+    <link rel="alternate"
+          hreflang="x-default"
+          href="https://cyberhuginn.github.io/noa_iran_map_react/">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            line-height: 1.8;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .language-switch {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .language-switch a {
+            color: #ff5733;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background-color: #ff5733;
+            color: white;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin: 25px 0 15px;
+            font-size: 1.8rem;
+            color: #ff5733;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-right: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            direction: ltr;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0 25px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .download {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff5733;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background .3s;
+        }
+
+        .download:hover {
+            background-color: #e14e2d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            pre {
+                font-size: .9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="language-switch">
+    <a href="../index.html">English</a>
+</div>
+
+<header>
+    <h1>Noa Iran Map React</h1>
+    <p>نقشه تعاملی و قابل شخصی‌سازی ایران برای React و Next.js</p>
+</header>
+
+<div class="container">
+
+    <h2>درباره پروژه</h2>
+
+    <p>
+        Noa Iran Map React یک کتابخانه متن‌باز برای نمایش نقشه تعاملی ایران در پروژه‌های
+        React و Next.js است.
+    </p>
+
+    <p>
+        این کتابخانه با پشتیبانی کامل از TypeScript امکان رنگ‌آمیزی استان‌ها،
+        نمایش داده‌های آماری و ساخت داشبوردهای حرفه‌ای را فراهم می‌کند.
+    </p>
+
+    <p>
+        اگر قصد نمایش آمار فروش، کاربران، سفارشات یا هر نوع داده جغرافیایی در ایران را دارید،
+        این کتابخانه راهکاری سبک و ساده در اختیار شما قرار می‌دهد.
+    </p>
+
+    <h2>ویژگی‌ها</h2>
+
+    <ul>
+        <li><strong>رنگ‌آمیزی پویا استان‌ها:</strong> نمایش داده‌ها روی استان‌های مختلف ایران.</li>
+
+        <li><strong>پشتیبانی کامل از TypeScript:</strong> توسعه آسان‌تر با تایپ‌های دقیق.</li>
+
+        <li><strong>سازگار با Next.js:</strong> مناسب برای SSR و برنامه‌های مدرن React.</li>
+
+        <li><strong>کاملاً تعاملی:</strong> پشتیبانی از Tooltip و بروزرسانی لحظه‌ای داده‌ها.</li>
+
+        <li><strong>سبک و سریع:</strong> بدون وابستگی‌های سنگین.</li>
+
+        <li><strong>سفارشی‌سازی آسان:</strong> امکان تغییر رنگ‌ها و رفتار نقشه از طریق Props.</li>
+    </ul>
+
+    <h2>نصب</h2>
+
+    <pre><code>npm install noa-iran-map-react</code></pre>
+
+    <h2>نمونه استفاده</h2>
+
+    <pre><code>import React from 'react';
+import IranMap from 'noa-iran-map-react';
+
+export default function Home() {
+    const data = {
+        "IR-32": 100, // Alborz
+        "IR-15": 200, // Kerman
+        "IR-04": 250, // Fars
+    };
+
+    return (
+        &lt;IranMap data={data} /&gt;
+    );
+}</code></pre>
+
+    <h2>پراپرتی‌ها (Props)</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>نام</th>
+            <th>نوع</th>
+            <th>پیش‌فرض</th>
+            <th>توضیحات</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>color</td>
+            <td>string</td>
+            <td>#FF5733</td>
+            <td>رنگ استان‌هایی که داده دارند.</td>
+        </tr>
+
+        <tr>
+            <td>backgroundColor</td>
+            <td>string</td>
+            <td>#E0E0E0</td>
+            <td>رنگ پیش‌فرض استان‌های بدون داده.</td>
+        </tr>
+
+        <tr>
+            <td>tooltipLabel</td>
+            <td>(code: string) => string</td>
+            <td>undefined</td>
+            <td>متن Tooltip هنگام قرار گرفتن ماوس روی استان‌ها.</td>
+        </tr>
+
+        <tr>
+            <td>data</td>
+            <td>Record&lt;string, number&gt;</td>
+            <td>{}</td>
+            <td>داده‌های مربوط به هر استان.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>کد استان‌ها</h2>
+
+    <p>
+        برای رنگ‌آمیزی و نمایش اطلاعات از کد استاندارد استان‌ها استفاده کنید.
+    </p>
+
+    <table>
+        <thead>
+        <tr>
+            <th>استان</th>
+            <th>کد</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>البرز</td>
+            <td>IR-32</td>
+        </tr>
+
+        <tr>
+            <td>کرمان</td>
+            <td>IR-15</td>
+        </tr>
+
+        <tr>
+            <td>فارس</td>
+            <td>IR-04</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>
+        لیست کامل کد استان‌های ایران را می‌توانید از فایل زیر دریافت کنید.
+    </p>
+
+    <a href="https://cyberhuginn.github.io/noa_iran_map_react/assets/iran_provinces.json"
+       class="download">
+        دانلود فایل کامل کد استان‌ها
+    </a>
+
+    <h2>موارد استفاده</h2>
+
+    <ul>
+        <li>داشبوردهای مدیریتی</li>
+        <li>نمایش آمار فروش استانی</li>
+        <li>تحلیل داده‌های جغرافیایی</li>
+        <li>نمایش پراکندگی کاربران</li>
+        <li>سامانه‌های گزارش‌گیری</li>
+        <li>پلتفرم‌های آماری و تحلیلی</li>
+    </ul>
+
+</div>
+
+<footer>
+    <p>
+        © 2025
+        <a href="https://github.com/cyberhuginn" target="_blank">CyberHuginn</a>
+        &
+        <a href="https://github.com/YousefZare2000" target="_blank">YousefZare</a>
+        - تمامی حقوق محفوظ است.
+    </p>
+</footer>
+
+</body>
+</html>
